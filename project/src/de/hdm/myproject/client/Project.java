@@ -12,5 +12,5 @@ public class Project implements EntryPoint {
 	
 	public void onModuleLoad() {
     
-  }
+	}
 }
