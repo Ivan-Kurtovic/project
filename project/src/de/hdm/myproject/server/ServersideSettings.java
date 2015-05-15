@@ -16,13 +16,11 @@ import de.hdm.myproject.shared.CommonSettings;
  * <code>ServerSideSettings.getLogger()</code> genutzt werden kann.
  * </p>
  * 
- * @author thies
- * @version 1.0
- * @since 28.02.2012
+ *
  * 
  */
 public class ServersideSettings extends CommonSettings {
-  private static final String LOGGER_NAME = "BankProjekt Server";
+  private static final String LOGGER_NAME = "Server";
   private static final Logger log = Logger.getLogger(LOGGER_NAME);
 
   /**

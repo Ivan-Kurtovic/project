@@ -11,13 +11,13 @@ public class ReportGeneratorImpl extends RemoteServiceServlet
 implements ReportGenerator {
 
 	
+	
 /**
    * Ein ReportGenerator benötigt Zugriff auf die SteucklistenAdministration, da diese die
    * essentiellen Methoden für die Koexistenz von Datenobjekten (vgl.
    * bo-Package) bietet.
    */
-  private StuecklistenAdministration administration = null;
-
+	private StuecklistenAdministration administration = null;
 	 
 	private static final long serialVersionUID = 1L;
 	
