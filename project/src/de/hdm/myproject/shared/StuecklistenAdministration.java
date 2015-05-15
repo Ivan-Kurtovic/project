@@ -6,6 +6,19 @@ import de.hdm.myproject.shared.bo.Bauteil;
 
 public interface StuecklistenAdministration extends RemoteService {
 	
+	
+	
+	
+	/**
+	 * Ein Bauteil anlegen
+	 * 
+	 * @param bauteilBeschreibung
+	 *            BauteilBeschreibung
+	 * @param materialBeschreibung
+	 *            MaterialBeschreibung
+	 * @return Ein fertiges Kunden-Objekt
+	 * @throws IllegalArgumentException
+	 */
  	Bauteil createBauteil(String name, String bauteilBeschreibung,
 			String materialBeschreibung) throws IllegalArgumentException;
 
