@@ -4,11 +4,19 @@ public class Bauteil extends BusinessObject {
 
 	
 	private static final long serialVersionUID = 1L;
+	private String name = "Bauteiltest";
 	private String bauteilBeschreibung = "testtext";
 	private String materialBeschreibung = "testtext";
 
 	
-	
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
 	
 	
 	public String getBauteilBeschreibung() {
@@ -41,9 +49,12 @@ public class Bauteil extends BusinessObject {
 	   */
 	@Override
 	public String toString() {
-	    return super.toString() + " Teilbeschreibung: " + this.bauteilBeschreibung
-	    		+"Materialbeschreibung"+this.materialBeschreibung;
+	    return super.toString() + "Teilbeschreibung:" + this.bauteilBeschreibung
+	    		+ "Materialbeschreibung" + this.materialBeschreibung;
 	  }
+
+
+	
 }
 
 
