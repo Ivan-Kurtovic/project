@@ -9,14 +9,6 @@ public class Bauteil extends BusinessObject {
 
 	
 
-	public void setNutzerID(int int1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void setId(int int1) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }
