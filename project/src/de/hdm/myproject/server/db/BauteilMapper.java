@@ -18,7 +18,7 @@ public class BauteilMapper {
 	
 	
 	/**
-	 * Die Klasse bauteilMapper wird nur einmal instantiiert. Man spricht
+	 * Die Klasse bauteilMapper wird nur einmal instantiert. Man spricht
 	 * hierbei von einem sogenannten <b>Singleton</b>.
 	 * <p>
 	 * Diese Variable ist durch den Bezeichner <code>static</code> nur einmal
