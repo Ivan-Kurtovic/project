@@ -1,4 +1,4 @@
-IT_PROJEKT SS2015
+IT_PROJEKT SS2015 Prof. Dr. Peter Thies, Prof. Dr. Christain Rathke
 Stücklistenverwaltung
 
 Gruppe 2
