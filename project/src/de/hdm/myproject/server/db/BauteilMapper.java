@@ -67,6 +67,7 @@ public class BauteilMapper {
 	 * 
 	 */
 	public Bauteil insert(Bauteil bauteil) {
+		
 		Connection con = DBConnection.connection();
 
 		try {
@@ -90,8 +91,10 @@ public class BauteilMapper {
 				stmt = con.createStatement();
 
 				// Jetzt erst erfolgt die tatsächliche Einfügeoperation
-				stmt.executeUpdate("INSERT INTO `bauteile` (`id`, `beschreibung`, `materialBeschreibung`) VALUES ('"
+				stmt.executeUpdate("INSERT INTO `bauteile` (`id`, `name`, `beschreibung`, `materialBeschreibung`) VALUES ('"
 						+ bauteil.getId()
+						+ "', '"
+						+ bauteil.getName()
 						+ "', '"
 						+ bauteil.getBauteilBeschreibung()
 						+ "', '"
