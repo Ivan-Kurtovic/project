@@ -30,8 +30,8 @@ public class Project implements EntryPoint {
 	public void onModuleLoad() {
    
 		/*
-	     * Zunächst weisen wir der BankAdministration eine Bank-Instanz zu, die das
-	     * Kreditinstitut repräsentieren soll, für das diese Applikation arbeitet.
+	     * Zunächst weisen wir der StuecklistenAdministration eine Project-Instanz zu, die das
+	     * Project repräsentieren soll, für das diese Applikation arbeitet.
 	     */
 	    StuecklistenAdministrationAsync projectVerwaltung = ClientsideSettings.getItProjectVerwaltung();
 	    ItProject project = new ItProject();
