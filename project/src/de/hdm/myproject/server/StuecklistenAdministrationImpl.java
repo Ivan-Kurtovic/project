@@ -5,6 +5,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import de.hdm.myproject.server.db.BauteilMapper;
 import de.hdm.myproject.shared.StuecklistenAdministration;
 import de.hdm.myproject.shared.bo.Bauteil;
+import de.hdm.myproject.shared.bo.ItProject;
 
 
 
@@ -172,6 +173,13 @@ implements StuecklistenAdministration {
 		    // Objekt in der DB speichern.
 		    return this.bauteilMapper.insert(b);
 		  }
+
+
+	@Override
+	public void setItProject(ItProject project) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

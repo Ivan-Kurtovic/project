@@ -11,10 +11,6 @@ import de.hdm.myproject.shared.*;
  * Klasse mit Eigenschaften und Diensten, die für alle Client-seitigen Klassen
  * relevant sind.
  * 
- * @author thies
- * @version 1.0
- * @since 28.02.2012
- * 
  */
 public class ClientsideSettings extends CommonSettings {
 
@@ -23,7 +19,7 @@ public class ClientsideSettings extends CommonSettings {
    * namens <code>BankAdministration</code>.
    */
 
-  private static StuecklistenAdministrationAsync stuecklistenVerwaltung = null;
+  private static StuecklistenAdministrationAsync projectVerwaltung = null;
 
   /**
    * Remote Service Proxy zur Verbindungsaufnahme mit dem Server-seitgen Dienst
@@ -34,7 +30,7 @@ public class ClientsideSettings extends CommonSettings {
   /**
    * Name des Client-seitigen Loggers.
    */
-  private static final String LOGGER_NAME = "BankProjekt Web Client";
+  private static final String LOGGER_NAME = "ItProjekt Web Client";
   
   /**
    * Instanz des Client-seitigen Loggers.
@@ -94,31 +90,28 @@ public class ClientsideSettings extends CommonSettings {
 
   /**
    * <p>
-   * Anlegen und Auslesen der applikationsweit eindeutigen BankAdministration. Diese
-   * Methode erstellt die BankAdministration, sofern sie noch nicht existiert. Bei
+   * Anlegen und Auslesen der applikationsweit eindeutigen StuecklistenAdministration. Diese
+   * Methode erstellt die StuecklistenAdministration, sofern sie noch nicht existiert. Bei
    * wiederholtem Aufruf dieser Methode wird stets das bereits zuvor angelegte
    * Objekt zurückgegeben.
    * </p>
    * 
    * <p>
    * Der Aufruf dieser Methode erfolgt im Client z.B. durch
-   * <code>BankAdministrationAsync bankVerwaltung = ClientSideSettings.getBankVerwaltung()</code>
+   * <code>StuecklistenAdministrationAsync projectVerwaltung = ClientSideSettings.getItProjectVerwaltung()</code>
    * .
    * </p>
    * 
-   * @return eindeutige Instanz des Typs <code>BankAdministrationAsync</code>
-   * @author Peter Thies
-   * @since 28.02.2012
    */
-  public static StuecklistenAdministrationAsync getBankVerwaltung() {
+  public static StuecklistenAdministrationAsync getItProjectVerwaltung() {
     // Gab es bislang noch keine BankAdministration-Instanz, dann...
-    if (stuecklistenVerwaltung == null) {
+    if (projectVerwaltung == null) {
       // Zunächst instantiieren wir BankAdministration
-    	stuecklistenVerwaltung = GWT.create(StuecklistenAdministration.class);
+    	projectVerwaltung = GWT.create(StuecklistenAdministration.class);
     }
 
     // So, nun brauchen wir die BankAdministration nur noch zurückzugeben.
-    return stuecklistenVerwaltung;
+    return projectVerwaltung;
   }
 
   /**
@@ -135,9 +128,8 @@ public class ClientsideSettings extends CommonSettings {
    * .
    * </p>
    * 
-   * @return eindeutige Instanz des Typs <code>BankAdministrationAsync</code>
-   * @author Peter Thies
-   * @since 28.02.2012
+   * @return eindeutige Instanz des Typs <code>StuecklistenAdministrationAsync</code>
+   * 
    */
   public static ReportGeneratorAsync getReportGenerator() {
     // Gab es bislang noch keine ReportGenerator-Instanz, dann...
